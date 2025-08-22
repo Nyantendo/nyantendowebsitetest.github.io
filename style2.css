@@ -1,0 +1,112 @@
+html{
+	background-color: #3e93ff;
+    max-width: 100%;
+	overflow: hidden;
+}
+
+video#bg-video {
+    background: url("./assets/first-frame.png") no-repeat;
+    background-size: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/*img#header{
+  	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+    left: 0;
+    min-width: 100%;
+	z-index: -1;
+    overflow: hidden;
+}*/
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 267px;
+	margin-left: -8px;
+	margin-right: -8px;
+    overflow: hidden;
+}
+
+img.header {
+    width: 50%;
+    height: 267px;
+}
+
+.tabs {
+	font-family: "ITC Bolt"; 
+	font-size: 32px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-top: 1vh;
+	height: 56px;
+	margin-left: -8px;
+	margin-right: -8px;
+	background: url('./assets/buttonsbg.png'); 
+	background-position: center;
+}
+
+.buttons {
+	background: 0; 
+	height: 48px; 
+	width: 256px;
+	text-align: center;
+	color: white;
+	font-family: 'BigNoodleTitling', sans-serif;
+	font-size: 38px;
+	transition: font-size 0.05s;
+	text-decoration: none !important;
+}
+
+.buttons:hover {
+	background: url('./assets/buttons.png'); 
+	background-position: center; 
+	font-size: 48px;
+}
+
+.content {
+	margin-left: 25vw;
+	margin-right: 25vw;
+	padding: 4vh 4vw 1vh 5vw;
+	height: 90vh;
+	background-image: url('./assets/background.png');
+	color: white;
+	mask-image: url(./assets/paper1.png);
+	-webkit-mask-image: url(./assets/paper1.png);
+	mask-position: top left;
+	-webkit-mask-position: top left;
+	mask-composite: subtract;
+	-webkit-mask-composite: subtract;
+	mask-size: 100%, auto;
+	-webkit-mask-size: 100%, auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+h1.title {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 4rem;
+	letter-spacing: 1rem;
+	text-align: center;
+	background: url('./assets/buttonsbg.png');
+	background-position: center;
+	background-size: 100% auto;
+}
+
+
+.content h2 {
+		font-family: "ITC Bolt"; 
+}
